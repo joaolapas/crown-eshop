@@ -1,0 +1,166 @@
+[
+  {
+    "Name": "Crown Dadcap Beige",
+    "Description": "Dadcap clássica com ajuste relaxed e acabamento premium.",
+    "Price": 29,
+    "PictureUrl": "/images/products/Dadcap1.png",
+    "Model": "Dadcap",
+    "Color": "Beige",
+    "QuantityInStock": 80
+  },
+  {
+    "Name": "Crown Dadcap Black Red Logo",
+    "Description": "Dadcap preta com logo bordado em vermelho.",
+    "Price": 30,
+    "PictureUrl": "/images/products/Dadcap2.png",
+    "Model": "Dadcap",
+    "Color": "Black/Red",
+    "QuantityInStock": 75
+  },
+  {
+    "Name": "Crown Dadcap Navy",
+    "Description": "Dadcap azul navy com design clean.",
+    "Price": 30,
+    "PictureUrl": "/images/products/Dadcap3.png",
+    "Model": "Dadcap",
+    "Color": "Navy",
+    "QuantityInStock": 70
+  },
+  {
+    "Name": "Crown Dadcap Olive",
+    "Description": "Dadcap olive com visual urbano.",
+    "Price": 31,
+    "PictureUrl": "/images/products/Dadcap4.png",
+    "Model": "Dadcap",
+    "Color": "Olive",
+    "QuantityInStock": 65
+  },
+  {
+    "Name": "Crown Dadcap Red",
+    "Description": "Dadcap vermelha com logo frontal Crown.",
+    "Price": 30,
+    "PictureUrl": "/images/products/Dadcap5.png",
+    "Model": "Dadcap",
+    "Color": "Red",
+    "QuantityInStock": 60
+  },
+  {
+    "Name": "Crown Dadcap Charcoal",
+    "Description": "Dadcap cinza escuro com estética minimal.",
+    "Price": 31,
+    "PictureUrl": "/images/products/Dadcap6.png",
+    "Model": "Dadcap",
+    "Color": "Charcoal",
+    "QuantityInStock": 55
+  },
+
+  {
+    "Name": "Crown Flatback Green",
+    "Description": "Flatback estruturada com aba reta.",
+    "Price": 38,
+    "PictureUrl": "/images/products/Snapback1.png",
+    "Model": "Flatback",
+    "Color": "Green",
+    "QuantityInStock": 70
+  },
+  {
+    "Name": "Crown Flatback Black Red",
+    "Description": "Flatback preta com detalhe vermelho.",
+    "Price": 39,
+    "PictureUrl": "/images/products/Snapback2.png",
+    "Model": "Flatback",
+    "Color": "Black/Red",
+    "QuantityInStock": 65
+  },
+  {
+    "Name": "Crown Flatback Cream",
+    "Description": "Flatback clara com contraste premium.",
+    "Price": 40,
+    "PictureUrl": "/images/products/Snapback3.png",
+    "Model": "Flatback",
+    "Color": "Cream",
+    "QuantityInStock": 60
+  },
+  {
+    "Name": "Crown Flatback Grey",
+    "Description": "Flatback cinza com logo frontal Crown.",
+    "Price": 38,
+    "PictureUrl": "/images/products/Snapback4.png",
+    "Model": "Flatback",
+    "Color": "Grey",
+    "QuantityInStock": 55
+  },
+  {
+    "Name": "Crown Flatback Dark Green",
+    "Description": "Flatback verde escuro com estilo street.",
+    "Price": 39,
+    "PictureUrl": "/images/products/Snapback5.png",
+    "Model": "Flatback",
+    "Color": "Dark Green",
+    "QuantityInStock": 50
+  },
+  {
+    "Name": "Crown Flatback Black Gold",
+    "Description": "Flatback preta com detalhes dourados.",
+    "Price": 42,
+    "PictureUrl": "/images/products/Snapback6.png",
+    "Model": "Flatback",
+    "Color": "Black/Gold",
+    "QuantityInStock": 45
+  },
+
+  {
+    "Name": "Crown Trucker Black",
+    "Description": "Trucker cap clássica com painéis em mesh.",
+    "Price": 34,
+    "PictureUrl": "/images/products/Truckercap1.png",
+    "Model": "Trucker Cap",
+    "Color": "Black",
+    "QuantityInStock": 70
+  },
+  {
+    "Name": "Crown Trucker Red White",
+    "Description": "Trucker cap com contraste vermelho e branco.",
+    "Price": 35,
+    "PictureUrl": "/images/products/Truckercap2.png",
+    "Model": "Trucker Cap",
+    "Color": "Red/White",
+    "QuantityInStock": 65
+  },
+  {
+    "Name": "Crown Trucker Grey",
+    "Description": "Trucker cap cinza com ajuste snapback.",
+    "Price": 35,
+    "PictureUrl": "/images/products/Truckercap3.png",
+    "Model": "Trucker Cap",
+    "Color": "Grey",
+    "QuantityInStock": 60
+  },
+  {
+    "Name": "Crown Trucker Sand",
+    "Description": "Trucker cap sand com visual moderno.",
+    "Price": 36,
+    "PictureUrl": "/images/products/Truckercap4.png",
+    "Model": "Trucker Cap",
+    "Color": "Sand",
+    "QuantityInStock": 55
+  },
+  {
+    "Name": "Crown Trucker Navy",
+    "Description": "Trucker cap azul navy respirável.",
+    "Price": 35,
+    "PictureUrl": "/images/products/Truckercap5.png",
+    "Model": "Trucker Cap",
+    "Color": "Navy",
+    "QuantityInStock": 50
+  },
+  {
+    "Name": "Crown Trucker Black Green",
+    "Description": "Trucker cap preta com logo verde.",
+    "Price": 37,
+    "PictureUrl": "/images/products/Truckercap6.png",
+    "Model": "Trucker Cap",
+    "Color": "Black/Green",
+    "QuantityInStock": 45
+  }
+]

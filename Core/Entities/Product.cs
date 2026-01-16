@@ -6,7 +6,7 @@ public class Product: BaseEntity
     public required String Description { get; set; }
     public required decimal Price { get; set; }
     public required String PictureUrl { get; set; }
-    public required String Type { get; set; }
-    public required String Brand { get; set; }
+    public required String Model { get; set; }
+    public required String Color { get; set; }
     public required int QuantityInStock { get; set; }
 }
