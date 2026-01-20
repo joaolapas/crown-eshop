@@ -26,10 +26,10 @@
 /Users/joaolapas/Desktop/crown/Infrastructure/obj/Debug/net10.0/Infrastructure.AssemblyInfoInputs.cache
 /Users/joaolapas/Desktop/crown/Infrastructure/obj/Debug/net10.0/Infrastructure.AssemblyInfo.cs
 /Users/joaolapas/Desktop/crown/Infrastructure/obj/Debug/net10.0/Infrastructure.csproj.CoreCompileInputs.cache
+/Users/joaolapas/Desktop/crown/Infrastructure/obj/Debug/net10.0/Infrastructure.sourcelink.json
 /Users/joaolapas/Desktop/crown/Infrastructure/obj/Debug/net10.0/Infrastr.15EFFBFE.Up2Date
 /Users/joaolapas/Desktop/crown/Infrastructure/obj/Debug/net10.0/Infrastructure.dll
 /Users/joaolapas/Desktop/crown/Infrastructure/obj/Debug/net10.0/refint/Infrastructure.dll
 /Users/joaolapas/Desktop/crown/Infrastructure/obj/Debug/net10.0/Infrastructure.pdb
 /Users/joaolapas/Desktop/crown/Infrastructure/obj/Debug/net10.0/Infrastructure.genruntimeconfig.cache
 /Users/joaolapas/Desktop/crown/Infrastructure/obj/Debug/net10.0/ref/Infrastructure.dll
-/Users/joaolapas/Desktop/crown/Infrastructure/obj/Debug/net10.0/Infrastructure.sourcelink.json

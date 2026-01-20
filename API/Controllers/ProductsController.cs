@@ -1,3 +1,4 @@
+using API.RequestHelper;
 using Core.Entities;
 using Core.Interfaces;
 using Core.Specification;
@@ -7,23 +8,15 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;
 
-[ApiController]
-[Route("api/[controller]")]
-public class ProductsController(IGenericRepository<Product> repo) : ControllerBase
-{
-    
 
-    
-    
-    
-    
-    
+public class ProductsController(IGenericRepository<Product> repo) : BaseApiController
+{
+
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Product>>> GetProducts(string? color, string? model, string? sort)
+    public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts([FromQuery] ProductSpecParams specParams)
     {
-        var spec = new ProductSpecification(color, model, sort);
-        var products = await repo.ListAsync(spec);
-        return Ok(products);
+        var spec = new ProductSpecification(specParams);
+        return await CreatePagedResult(repo, spec, specParams.PageIndex, specParams.PageSize);
     }
 
     [HttpGet("Colors")]
@@ -51,6 +44,8 @@ public class ProductsController(IGenericRepository<Product> repo) : ControllerBa
             return NotFound();
         return product;
     }
+    
+    
 
     [HttpPost]
     public async Task<ActionResult<Product>> PostProduct(Product product)

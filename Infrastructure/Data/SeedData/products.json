@@ -14,7 +14,7 @@
     "Price": 30,
     "PictureUrl": "/images/products/Dadcap2.png",
     "Model": "Dadcap",
-    "Color": "Black/Red",
+    "Color": "Black",
     "QuantityInStock": 75
   },
   {
@@ -59,7 +59,7 @@
     "Description": "Flatback estruturada com aba reta.",
     "Price": 38,
     "PictureUrl": "/images/products/Snapback1.png",
-    "Model": "Flatback",
+    "Model": "Snapback",
     "Color": "Green",
     "QuantityInStock": 70
   },
@@ -68,8 +68,8 @@
     "Description": "Flatback preta com detalhe vermelho.",
     "Price": 39,
     "PictureUrl": "/images/products/Snapback2.png",
-    "Model": "Flatback",
-    "Color": "Black/Red",
+    "Model": "Snapback",
+    "Color": "Black",
     "QuantityInStock": 65
   },
   {
@@ -77,7 +77,7 @@
     "Description": "Flatback clara com contraste premium.",
     "Price": 40,
     "PictureUrl": "/images/products/Snapback3.png",
-    "Model": "Flatback",
+    "Model": "Snapback",
     "Color": "Cream",
     "QuantityInStock": 60
   },
@@ -86,7 +86,7 @@
     "Description": "Flatback cinza com logo frontal Crown.",
     "Price": 38,
     "PictureUrl": "/images/products/Snapback4.png",
-    "Model": "Flatback",
+    "Model": "Snapback",
     "Color": "Grey",
     "QuantityInStock": 55
   },
@@ -95,8 +95,8 @@
     "Description": "Flatback verde escuro com estilo street.",
     "Price": 39,
     "PictureUrl": "/images/products/Snapback5.png",
-    "Model": "Flatback",
-    "Color": "Dark Green",
+    "Model": "Snapback",
+    "Color": "Green",
     "QuantityInStock": 50
   },
   {
@@ -104,8 +104,8 @@
     "Description": "Flatback preta com detalhes dourados.",
     "Price": 42,
     "PictureUrl": "/images/products/Snapback6.png",
-    "Model": "Flatback",
-    "Color": "Black/Gold",
+    "Model": "Snapback",
+    "Color": "Black",
     "QuantityInStock": 45
   },
 
@@ -114,7 +114,7 @@
     "Description": "Trucker cap clássica com painéis em mesh.",
     "Price": 34,
     "PictureUrl": "/images/products/Truckercap1.png",
-    "Model": "Trucker Cap",
+    "Model": "Truckercap",
     "Color": "Black",
     "QuantityInStock": 70
   },
@@ -123,8 +123,8 @@
     "Description": "Trucker cap com contraste vermelho e branco.",
     "Price": 35,
     "PictureUrl": "/images/products/Truckercap2.png",
-    "Model": "Trucker Cap",
-    "Color": "Red/White",
+    "Model": "Truckercap",
+    "Color": "Red",
     "QuantityInStock": 65
   },
   {
@@ -132,7 +132,7 @@
     "Description": "Trucker cap cinza com ajuste snapback.",
     "Price": 35,
     "PictureUrl": "/images/products/Truckercap3.png",
-    "Model": "Trucker Cap",
+    "Model": "Truckercap",
     "Color": "Grey",
     "QuantityInStock": 60
   },
@@ -141,7 +141,7 @@
     "Description": "Trucker cap sand com visual moderno.",
     "Price": 36,
     "PictureUrl": "/images/products/Truckercap4.png",
-    "Model": "Trucker Cap",
+    "Model": "Truckercap",
     "Color": "Sand",
     "QuantityInStock": 55
   },
@@ -150,7 +150,7 @@
     "Description": "Trucker cap azul navy respirável.",
     "Price": 35,
     "PictureUrl": "/images/products/Truckercap5.png",
-    "Model": "Trucker Cap",
+    "Model": "Truckercap",
     "Color": "Navy",
     "QuantityInStock": 50
   },
@@ -159,8 +159,8 @@
     "Description": "Trucker cap preta com logo verde.",
     "Price": 37,
     "PictureUrl": "/images/products/Truckercap6.png",
-    "Model": "Trucker Cap",
-    "Color": "Black/Green",
+    "Model": "Truckercap",
+    "Color": "Black",
     "QuantityInStock": 45
   }
 ]
