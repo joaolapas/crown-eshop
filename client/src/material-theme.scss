@@ -1,11 +1,21 @@
 
 @use '@angular/material' as mat;
 
+
+
+:root {
+  @include mat.paginator-overrides((
+    container-background-color: none,
+    container-size: 1
+  ));
+}
+
 :root {
   @include mat.button-overrides((
     filled-container-shape: 8px,
     outlined-container-shape: 8px,
     tonal-container-shape: 8px,
+
 
   ));
 }

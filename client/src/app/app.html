@@ -1,15 +1,7 @@
-<app-header/>
-<div class="container w-screen mt-6 p-8 bg-linear-to-l from-gray-300 to-white">
-  <ul class="">
-    @for (product of products(); track product.id){
-      <li>
-        <span>{{product.name}}</span>
-        <span>{{product.model}}</span>
-        <span>{{product.color}}</span>
-        <span>{{product.price}}</span>
-      </li>
-
-    }
-  </ul>
+<app-header></app-header>
+<div class="bg-radial from-neutral-50 to-neutral-200">
+  <div class="mx-auto max-w-6xl py-8 px-4">
+    <app-shop></app-shop>
+  </div>
 </div>
 
