@@ -1,0 +1,58 @@
+@if (product(); as product) {
+  <section class="py-8">
+    <div class="max-w-screen-2xl px-4 mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- IMaagem -->
+        <div class="max-w-xl mx-auto overflow-hidden rounded-lg">
+          <img
+            class="w-full object-cover"
+            [src]="product.pictureUrl"
+            alt="product image"
+          />
+        </div>
+
+        <!-- detalhes -->
+        <div class="flex flex-col justify-center">
+          <h1 class="text-2xl font-semibold text-gray-900 uppercase">
+            {{ product.name }}
+          </h1>
+
+          <div class="mt-4 flex items-center gap-4">
+            <p class="text-3xl font-extrabold text-gray-900">
+              {{ product.price | currency:'EUR' }}
+            </p>
+          </div>
+
+          <p class="mt-6 text-gray-600 leading-relaxed">
+            {{ product.description }}
+          </p>
+
+          <div class="mt-8 flex gap-4">
+            <button
+              mat-raised-button
+              color="primary"
+              class="px-6"
+            >
+              <mat-icon>add_shopping_cart</mat-icon>
+              Add to cart
+            </button>
+
+            <button
+              routerLink="/shop"
+              mat-stroked-button
+              color="primary"
+            >
+              Back to shop
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+} @else {
+  <div class="py-16 text-center text-gray-500">
+    Loading product…
+  </div>
+}

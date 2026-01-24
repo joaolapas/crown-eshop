@@ -1,10 +1,22 @@
 @if (product(); as p) {
-  <mat-card appearance="raised" class="min-h-96 overflow-hidden">
-    <img [src]="p.pictureUrl" [alt]="'image of ' + p.name" />
+  <mat-card
+    routerLink="/shop/{{product()?.id}}"
+    appearance="raised"
+    class="group min-h-96 overflow-hidden rounded-xl transition-shadow hover:shadow-lg cursor-pointer"
+  >
+    <div class="overflow-hidden">
+      <img
+        [src]="p.pictureUrl"
+        [alt]="'image of ' + p.name"
+        class="w-full h-56 object-cover transition-transform duration-200 ease-out group-hover:scale-105"
+      />
+    </div>
+
     <mat-card-content class="mt-2">
-      <h2 class="text-sm font-semibold uppercase">{{p.name}}</h2>
-      <p class="font-light"  >{{p.price | currency:'EUR'}}</p>
+      <h2 class="text-sm font-semibold uppercase">{{ p.name }}</h2>
+      <p class="font-light">{{ p.price | currency:'EUR' }}</p>
     </mat-card-content>
+
     <mat-card-actions>
       <button mat-stroked-button class="w-full">
         <mat-icon>add_shopping_cart</mat-icon>

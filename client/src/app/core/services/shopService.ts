@@ -53,6 +53,12 @@ export class ShopService {
     });
   }
 
+  loadProduct(id: number){
+    return this.http.get<Product>(`${this.baseUrl}products/${id}`);
+
+  }
+
+
   loadColors() {
     if (this.colors().length) return;
     this.http.get<string[]>(`${this.baseUrl}products/colors`).subscribe({
