@@ -1,49 +1,53 @@
-<header class="w-full py-3 bg-linear-to-t from-neutral-700 to-neutral-200 shadow">
+<header
+  class="
+    w-full py-3
+    bg-linear-to-t from-neutral-700 to-neutral-200
+    shadow-2xl max-h-20
+    md:fixed md:top-0 md:z-50
+  "
+>
   <div class="mx-auto max-w-6xl px-4">
     <div class="flex items-center justify-between gap-3">
 
-      <div class="w-68"><img src="/images/logo.png" alt="app logo" class="h-10 md:h-14 w-auto shrink-0" /></div>
+      <div class="w-68">
+        <img src="/images/logo.png" alt="app logo" class="h-10 md:h-14 w-auto shrink-0" />
+      </div>
 
       <nav class="hidden md:flex items-center gap-10 uppercase text-xl text-white">
         <a
           routerLink="/"
-          class="border-b-2 border-transparent
-           transition-colors transition-border
-           duration-150 ease-in-out
-           hover:border-gray-700"
+          class="border-b-2 border-transparent transition-colors transition-border duration-150 ease-in-out hover:text-amber-400"
         >
           Home
         </a>
 
         <a
           routerLink="/shop"
-          class="border-b-2 border-transparent
-           transition-colors transition-border
-           duration-150 ease-in-out
-           hover:border-gray-700"
+          class="border-b-2 border-transparent transition-colors transition-border duration-150 ease-in-out hover:text-amber-400"
         >
           Shop
         </a>
 
         <a
-          href=""
-          class="border-b-2 border-transparent
-           transition-colors transition-border
-           duration-150 ease-in-out
-           hover:border-gray-700"
+          routerLink="/test-errors"
+          routerLinkActive="routerLinkActive"
+          class="border-b-2 border-transparent transition-colors transition-border duration-150 ease-in-out hover:text-amber-400"
         >
-          Contact
+          (errors)
         </a>
       </nav>
-
 
       <div class="flex items-center gap-3 shrink-0">
         <a matBadge="5" matBadgeSize="large" class="custom-badge inline-flex items-center">
           <mat-icon>shopping_cart</mat-icon>
         </a>
 
-        <button class="hidden! md:inline-flex! text-white! border-white!" matButton="outlined">Login</button>
-        <button class="hidden! md:inline-flex! bg-neutral-400! text-white! border-white! " matButton="tonal">Register</button>
+        <button class="hidden! md:inline-flex! text-white! border-white!" matButton="outlined">
+          Login
+        </button>
+        <button class="hidden! md:inline-flex! bg-white! text-black! border-amber-400!" matButton="tonal">
+          Register
+        </button>
 
         <button class="md:hidden! inline-flex items-center" aria-label="Open menu">
           <mat-icon>menu</mat-icon>
@@ -53,3 +57,7 @@
     </div>
   </div>
 </header>
+
+@if (busyService.loading()) {
+  <mat-progress-bar class="md:fixed md:top-20 md:z-50" mode="indeterminate"></mat-progress-bar>
+}

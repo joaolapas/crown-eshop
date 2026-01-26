@@ -1,14 +1,23 @@
 @if (product(); as p) {
   <mat-card
-    routerLink="/shop/{{product()?.id}}"
+    [routerLink]="['/shop', p.id]"
     appearance="raised"
-    class="group min-h-96 overflow-hidden rounded-xl transition-shadow hover:shadow-lg cursor-pointer"
+    class="
+      group
+      sm:min-h-[420px]
+      lg:min-h-[360px]
+      overflow-hidden
+      rounded-xl
+      transition-shadow
+      hover:shadow-lg
+      cursor-pointer
+    "
   >
-    <div class="overflow-hidden">
+    <div class="bg-white overflow-hidden rounded-t-xl">
       <img
         [src]="p.pictureUrl"
         [alt]="'image of ' + p.name"
-        class="w-full h-56 object-cover transition-transform duration-200 ease-out group-hover:scale-105"
+        class="w-full h-44 sm:h-52 object-contain p-3 transition-transform duration-200 ease-out group-hover:scale-105"
       />
     </div>
 
@@ -18,7 +27,11 @@
     </mat-card-content>
 
     <mat-card-actions>
-      <button mat-stroked-button class="w-full">
+      <button
+        mat-stroked-button
+        class="w-full"
+        (click)="$event.stopPropagation(); $event.preventDefault();"
+      >
         <mat-icon>add_shopping_cart</mat-icon>
         Add to cart
       </button>

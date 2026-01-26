@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
-import { MatMenu, MatMenuTrigger } from '@angular/material/menu';
+import {MatMenuModule} from '@angular/material/menu';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 
 import { ShopService } from '../../core/services/shopService';
@@ -19,8 +19,7 @@ import {FormsModule} from '@angular/forms';
     ProductItem,
     MatButton,
     MatIcon,
-    MatMenu,
-    MatMenuTrigger,
+    MatMenuModule,
     MatPaginator,
     MatListOption,
     MatSelectionList,
@@ -87,4 +86,38 @@ export class ShopComponent {
       this.shopService.loadProducts(this.shopParams);
     });
   }
+  rangeLabel(): string {
+    const pag = this.shopService.pagination();
+    if (!pag) return '';
+
+    const total = pag.count ?? 0;
+    const pageSize = this.shopParams.pageSize;
+    const pageNumber = this.shopParams.pageNumber; // 1-based
+
+    const start = total === 0 ? 0 : (pageNumber - 1) * pageSize + 1;
+    const end = Math.min(pageNumber * pageSize, total);
+
+    return `${start}–${end} of ${total}`;
+  }
+
+  isLastPage(): boolean {
+    const pag = this.shopService.pagination();
+    if (!pag) return true;
+
+    const total = pag.count ?? 0;
+    return this.shopParams.pageNumber * this.shopParams.pageSize >= total;
+  }
+
+  prevPage(): void {
+    if (this.shopParams.pageNumber <= 1) return;
+    this.shopParams.pageNumber--;
+    this.shopService.loadProducts(this.shopParams);
+  }
+
+  nextPage(): void {
+    if (this.isLastPage()) return;
+    this.shopParams.pageNumber++;
+    this.shopService.loadProducts(this.shopParams);
+  }
+
 }

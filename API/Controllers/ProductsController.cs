@@ -1,4 +1,3 @@
-using API.RequestHelper;
 using Core.Entities;
 using Core.Interfaces;
 using Core.Specification;
@@ -78,6 +77,8 @@ public class ProductsController(IGenericRepository<Product> repo) : BaseApiContr
         if(await repo.SaveAllAsync()) return NoContent();
         return BadRequest("Failed to delete product");
     }
+    
+   
     
     
     
